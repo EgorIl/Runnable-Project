@@ -7,7 +7,7 @@ while True:
         while True:
                 data = conn.recv(1024)
                 if not data: break
-                conn.send(data)
                 if data ==b 'close':
                         break
+                conn.send(data)
         conn.close()
